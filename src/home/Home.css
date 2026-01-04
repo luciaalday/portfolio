@@ -1,0 +1,16 @@
+@charset 'utf-8';
+:root {
+  --primary: #670892;
+  --secondary: #789543;
+
+}
+
+.home-nav {
+  background-color: var(--primary);
+}
+.home-nav-link {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  
+}
