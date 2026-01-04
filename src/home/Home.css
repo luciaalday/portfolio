@@ -5,6 +5,11 @@
 
 }
 
+html, body {
+  margin: 0;
+
+}
+
 .home-nav {
   background-color: var(--primary);
 }
@@ -12,5 +17,5 @@
   padding: 10px;
   color: white;
   text-decoration: none;
-  
+
 }
