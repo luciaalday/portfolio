@@ -1,21 +1,43 @@
 @charset 'utf-8';
-:root {
-  --primary: #670892;
-  --secondary: #789543;
-
-}
-
 html, body {
   margin: 0;
 
 }
 
 .home-nav {
-  background-color: var(--primary);
+  background-color: var(--primary1);
 }
 .home-nav-link {
   padding: 10px;
   color: white;
   text-decoration: none;
 
+}
+
+.lightmode {
+  --primary1: #670892;
+  --primary2: #670892;
+  --secondary1: #789543;
+  --secondary2: #789543;
+  --secondary3: #789543;
+  --neutral1: #ffffff;
+  --neutral2: #eeeeee;
+  --neutral3: #efefef;
+  --accent1: #909090;
+  --accent2: #ef9040;
+  --accent3: #4508fe;
+}
+
+.darkmode {
+  --primary1: #18165e;
+  --primary2: #670892;
+  --secondary1: #789543;
+  --secondary2: #789543;
+  --secondary3: #789543;
+  --neutral1: #ffffff;
+  --neutral2: #eeeeee;
+  --neutral3: #efefef;
+  --accent1: #909090;
+  --accent2: #ef9040;
+  --accent3: #4508fe;
 }
