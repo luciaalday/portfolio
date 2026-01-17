@@ -1,0 +1,12 @@
+@import './defaults.css';
+
+.home-nav {
+  background-color: var(--neutral1);
+}
+.home-nav-link {
+  color: var(--text1);
+  text-decoration: none;
+}
+input.dark-mode-toggle[type="checkbox"] {
+  accent-color: var(--primary1);
+}
