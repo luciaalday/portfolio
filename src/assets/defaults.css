@@ -1,45 +1,74 @@
 @charset 'utf-8';
 
+:root {
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 html, body {
-  margin: 0;
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background-image: radial-gradient(circle, var(--background2), var(--background1));
+}
+
+p, h3 {
+	color: var(--text1);
+}
+h1, h4, h6 {
+	color: var(--text2);
+}
+h2, h5 {
+	color: var(--text3);
+}
+
+.App {
+	flex: 1;
 }
 
 .lightmode {
-  --primary1: #670892;
-  --primary2: #670892;
-  --secondary1: #789543;
-  --secondary2: #789543;
-  --secondary3: #789543;
-  --neutral1: #aaaace;
-  --neutral2: #a7c6ce;
-  --neutral3: #ad9eac;
-  --accent1: #909090;
-  --accent2: #ef9040;
-  --accent3: #4508fe;
-  --background1: #ffffff;
-  --background2: #dfcece;
-  --background3: #f5d6d6;
-  --text1: #000000;
-  --text2: #141230;
-  --text3: #261439;
+	--primary1: #670892;
+	--primary2: #ad69cc;
+	--primary3: #61568b;
+	--secondary1: #077482;
+	--secondary2: #789543;
+	--secondary3: #789543;
+	--accent1: #909090;
+	--accent2: #ef9040;
+	--accent3: #4508fe;
+	--neutral1: #aaaace;
+	--neutral2: #a7c6ce;
+	--neutral3: #ad9eac;
+	--background1: #ffffff;
+	--background2: #aaa5c0;
+	--background3: #402785;
+	--text1: #000000;
+	--text2: #141230;
+	--text3: #c5b9d1;
 }
 
 .darkmode {
-  --primary1: #18165e;
-  --primary2: #670892;
-  --secondary1: #789543;
-  --secondary2: #789543;
-  --secondary3: #789543;
-  --neutral1: #453d61;
-  --neutral2: #40575e;
-  --neutral3: #5a3953;
-  --accent1: #909090;
-  --accent2: #ef9040;
-  --accent3: #4508fe;
-  --background1: #282131;
-  --background2: #343434;
-  --background3: #252525;
-  --text1: #ffffff;
-  --text2: #c7c4f7;
-  --text3: #a0bfd8;
+	--primary1: #aaaace;
+	--primary2: #7f7fbe;
+	--primary3: #7155a5;
+	--secondary1: #1f696e;
+	--secondary2: #5b97b3;
+	--secondary3: #3c7586;
+	--accent1: #909090;
+	--accent2: #ef9040;
+	--accent3: #4508fe;
+	--neutral1: #453d61;
+	--neutral2: #40575e;
+	--neutral3: #5a3953;
+	--background1: #101010;
+	--background2: #171e20;
+	--background3: #c9ecec;
+	--text1: #ffffff;
+	--text2: #c7c4f7;
+	--text3: #a0bfd8;
+}
+
+@keyframes fromLeft {
+	from {right: 0px;}
+	to {right: 100px}
 }

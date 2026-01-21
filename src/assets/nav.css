@@ -1,12 +1,53 @@
 @import './defaults.css';
 
 .home-nav {
-  background-color: var(--neutral1);
+	background-color: var(--neutral1);
+	position: sticky;
+	width: 100vw;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.left-nav {
+	text-align: left;
+	width: max-content;
+}
+.right-nav {
+	display: flex;
+	align-items: center;
+	text-align: right;
+	max-width: 90%;
 }
 .home-nav-link {
-  color: var(--text1);
-  text-decoration: none;
+	border-bottom: 2px solid var(--primary1);
+	color: var(--text1);
+	text-decoration: none;
+	padding:30px;
+	transition: .3s ease;
 }
-input.dark-mode-toggle[type="checkbox"] {
-  accent-color: var(--primary1);
+.home-nav-link:hover {
+	color: var(--text3);
+	border-bottom: 2px solid var(--primary2);
+	background-color: var(--primary3);
+}
+
+.footer-home {
+	background-color: var(--neutral2);
+	color: var(--text2);
+	text-align: center;
+	margin: 0;
+	padding: 20px;
+	bottom: 0;
+	width: 100vw;
+}
+
+.light-dark-mode {
+	background-color: transparent;
+	color: var(--primary1);
+	border: none;
+	padding: 30px;
+}
+.light-dark-mode:hover {
+	color: var(--primary2);
 }
