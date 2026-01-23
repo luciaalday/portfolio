@@ -21,6 +21,13 @@ h1, h4, h6 {
 h2, h5 {
 	color: var(--text3);
 }
+a {
+	text-decoration: none;
+	color: var(--text1);
+}
+a:hover {
+	text-decoration: underline;
+}
 
 .App {
 	flex: 1;
@@ -39,8 +46,8 @@ h2, h5 {
 	--neutral1: #aaaace;
 	--neutral2: #a7c6ce;
 	--neutral3: #ad9eac;
-	--background1: #ffffff;
-	--background2: #aaa5c0;
+	--background1: #aaa5c0;
+	--background2: #ffffff;
 	--background3: #402785;
 	--text1: #000000;
 	--text2: #141230;

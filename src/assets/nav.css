@@ -36,12 +36,14 @@
 	background-color: var(--neutral2);
 	color: var(--text2);
 	text-align: center;
-	margin: 0;
+	margin: auto;
 	padding: 20px;
 	bottom: 0;
 	width: 100vw;
 }
-
+.footer-home a {
+	margin: 10px;
+}
 .light-dark-mode {
 	background-color: transparent;
 	color: var(--primary1);

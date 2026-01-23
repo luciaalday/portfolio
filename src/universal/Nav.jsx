@@ -1,7 +1,6 @@
 import Cookies from 'js-cookie';
 import { useEffect, useState } from 'react';
 import { FaMoon, FaRegMoon } from 'react-icons/fa';
-import { Link } from "react-router-dom";
 
 export default function Nav() {
   const [darkMode, setDarkMode] = useState(false);
@@ -40,10 +39,10 @@ export default function Nav() {
         </a>
       </div>
       <div className='right-nav'>
-        <Link to={`/`} className="home-nav-link">About</Link>
-        <Link to={`/Coding`} className="home-nav-link">Projects</Link>
-        <Link to={`/Art`} className="home-nav-link">Art Portfolio</Link>
-        <Link to={`/Resume`} className="home-nav-link">Resume</Link>
+        <a href="/" className="home-nav-link">About</a>
+        <a href="/Projects" className="home-nav-link">Projects</a>
+        <a href="/Art" className="home-nav-link">Art Portfolio</a>
+        <a href="/Resume" className="home-nav-link">Resume</a>
         <button
           className='light-dark-mode'
           onClick={handleToggle}

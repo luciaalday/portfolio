@@ -10,3 +10,8 @@
 .art td {
   color: var(--text1);
 }
+
+.resume {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
