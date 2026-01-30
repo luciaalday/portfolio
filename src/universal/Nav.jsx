@@ -9,7 +9,7 @@ export default function Nav() {
   };
   
   return (
-    <nav>
+    <nav className={`${isOpen ? '' : 'inactive'}`}>
       <div className='home-nav'>
         <div className="left-nav">
           <button
