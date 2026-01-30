@@ -1,0 +1,27 @@
+
+@keyframes fromLeft {
+	from {right: 0px;}
+	to {right: 100px}
+}
+
+@keyframes fadeUp {
+	from {
+		opacity: 0;
+		transform: translateY(12px);
+	}
+	to {
+	opacity: 1;
+	transform: translateY(0);
+	}
+}
+
+@keyframes slideInLeft {
+	from {
+	transform: translateX(-40px);
+	opacity: 0;
+	}
+	to {
+	transform: translateX(0);
+	opacity: 1;
+	}
+}

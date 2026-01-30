@@ -8,6 +8,7 @@ import Resume from './pages/Resume';
 import './assets/defaults.css';
 import './assets/home.css';
 import './assets/nav.css';
+import './assets/animations.css';
 
 import Nav from './universal/Nav';
 import Footer from './universal/Footer';

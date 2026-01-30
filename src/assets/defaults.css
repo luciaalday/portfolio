@@ -4,35 +4,6 @@
 	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-html, body {
-	margin: 0;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	background-image: radial-gradient(circle, var(--background2), var(--background1));
-}
-
-p, h3 {
-	color: var(--text1);
-}
-h1, h4, h6 {
-	color: var(--text2);
-}
-h2, h5 {
-	color: var(--text3);
-}
-a {
-	text-decoration: none;
-	color: var(--text1);
-}
-a:hover {
-	text-decoration: underline;
-}
-
-.App {
-	flex: 1;
-}
-
 .lightmode {
 	--primary1: #670892;
 	--primary2: #ad69cc;
@@ -49,9 +20,11 @@ a:hover {
 	--background1: #aaa5c0;
 	--background2: #ffffff;
 	--background3: #402785;
+	--background4: #9485bef0;
 	--text1: #000000;
 	--text2: #141230;
-	--text3: #c5b9d1;
+	--text3: #6641a0;
+	--text4: #c5b9d1;
 }
 
 .darkmode {
@@ -70,12 +43,9 @@ a:hover {
 	--background1: #101010;
 	--background2: #171e20;
 	--background3: #c9ecec;
-	--text1: #ffffff;
-	--text2: #c7c4f7;
-	--text3: #a0bfd8;
-}
-
-@keyframes fromLeft {
-	from {right: 0px;}
-	to {right: 100px}
+	--background4: #364a6ef0;
+	--text1: #ffffff;		/* regular */
+	--text2: #c7c4f7;		/* headers */
+	--text3: #827dcf;		/* color */
+	--text4: #1c2227;		/* inverted */
 }

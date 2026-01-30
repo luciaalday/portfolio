@@ -3,23 +3,52 @@
 .monogram {
 	fill: var(--primary1);
 }
-.home {
+.flex-container {
 	display:flex;
+	margin: 0 auto;
+	justify-content: center;
 }
-.home h1 {
-	font-size: 8em;
-	padding: 0;
+html, body {
 	margin: 0;
-	animation: fromLeft 0.5s ease-in 1;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background-image: radial-gradient(circle, var(--background2), var(--background1));
 }
-.home .half {
-	width: 40%;
+article {
 	margin: 5%;
 }
-.home h3 {
-	border-bottom: 2px solid var(--secondary1);
+h1 {
+	color: var(--text2);
+	animation: fromLeft 0.5s ease-in 1;
 }
-
+h2 {
+	font-family: 'Courier New', Courier, monospace;
+	color: var(--text2);
+}
+h3 {
+	font-family: 'Courier New', Courier, monospace;
+	color: var(--text3);
+}
+h4 {
+	color: var(--text3);
+}
+p, h5 {
+	color: var(--text1);
+}
+h2, h6 {
+	color: var(--text2);
+}
+a {
+	text-decoration: none;
+	color: var(--text1);
+}
+a:hover {
+	text-decoration: underline;
+}
+.App {
+	flex: 1;
+}
 .left {
 	animation: slideInLeft 1.2s ease-out forwards;
 	text-align: right;
@@ -47,25 +76,3 @@
 .item:nth-child(1) { animation-delay: 0.9s; }
 .item:nth-child(2) { animation-delay: 1.05s; }
 .item:nth-child(3) { animation-delay: 1.2s; }
-
-@keyframes fadeUp {
-	from {
-		opacity: 0;
-		transform: translateY(12px);
-	}
-	to {
-	opacity: 1;
-	transform: translateY(0);
-	}
-}
-
-@keyframes slideInLeft {
-	from {
-	transform: translateX(-40px);
-	opacity: 0;
-	}
-	to {
-	transform: translateX(0);
-	opacity: 1;
-	}
-}
