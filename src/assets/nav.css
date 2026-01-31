@@ -68,7 +68,6 @@ nav button:hover {
   padding: 80px 20px 20px;
 }
 
-/* Show side menu when NOT inactive */
 .side-menu:not(.inactive) {
   left: 0;
 }
