@@ -1,6 +1,7 @@
 @import './defaults.css';
 
 html, body {
+	transition: 0.3s ease;
 	margin: 0;
 	min-height: 100vh;
 	display: flex;
@@ -15,6 +16,7 @@ main {
 article {
 	display: flex;
 	gap: 20px;
+	text-align: center;
 }
 h1 {
 	text-align: center;

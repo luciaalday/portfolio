@@ -8,7 +8,7 @@
   display: flex;
   max-width: 90vw;
   padding: 20px;
-  max-height: 70vh;
+  max-height: 60vh;
 
   overflow-x: auto;
   overflow-y: hidden;
@@ -25,6 +25,7 @@
   flex-direction: column;
   cursor: pointer;
   width: auto;
+  background-color: var(--background5);
 }
 
 .scroll-item:hover {
@@ -32,7 +33,7 @@
 }
 
 .scroll-item img {
-  max-height: 70vh;
+  max-height: 60vh;
   max-width: 90vw;  /* limit width in case we prioritize viewing the whole thing over aesthetics */
   object-fit: contain;
   display: block;

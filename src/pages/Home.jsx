@@ -13,10 +13,11 @@ export default function Home() {
           <a href="/Art"><h2 className="item">An artist</h2></a>
           <a href="/Resume"><h5 className="item">View my experience</h5></a>
         </section>
-        <section>
-          <hr></hr>
-          <h2>About Me</h2>
-        </section>
+      </article>
+        <hr></hr>
+      <article>
+        <h2>About Me</h2>
+
       </article>
     </main>
   );
