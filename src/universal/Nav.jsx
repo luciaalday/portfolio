@@ -1,13 +1,18 @@
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
-
+  
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+  
   return (
     <nav className={`${isOpen ? '' : 'inactive'}`}>
       <div className='home-nav'>
@@ -20,22 +25,22 @@ export default function Nav() {
           </button>
         </div>
         <div className='right-nav'>
-          <a href="/" className="home-nav-link">About Me</a>
-          <a href="/Projects" className="home-nav-link">Projects</a>
-          <a href="/Art" className="home-nav-link">Art Portfolio</a>
-          <a href="/Resume" className="home-nav-link">Resume</a>
-          <a href="/" aria-label='Home'>
+          <Link to="/" className="home-nav-link">About Me</Link>
+          <Link to="/Projects" className="home-nav-link">Projects</Link>
+          <Link to="/Art" className="home-nav-link">Art Portfolio</Link>
+          <Link to="/Resume" className="home-nav-link">Resume</Link>
+          <Link to="/" aria-label='Home'>
             <svg className='monogram' width={50} viewBox="0 0 1072 1072" style={{padding:'10px 15px 8px'}}>
               <path d="M492.99,0c64.1,79.36,70.77,189.19,48.97,285.83-26.13,118.5-87.58,226.26-159.25,322.76-39.14,52.36-81.82,101.72-127.17,148.66-15.15,15.56-30.32,31.13-46.56,45.6-24.31,21.83-50.75,41.31-77.43,60.23-23.49,16.68-48.02,35.01-78.3,35.84-38.69,1.03-60.18-30.37-51.23-67.23,10.72-42.61,47.89-75.7,82.95-99.22,9.14-6.83,18.84-12.98,28.95-18.26,23.06-11.59,48.25-18.55,73.52-23.46,56.03-10.63,114.28-5.89,168.44,11.19,71.28,22.56,143.14,66.67,194.86,120.64,5.58,6.04,11.13,12.61,15.72,19.51,49.48,67.96,126.46,126.31,202.76,160.71,27.35,11.72,55.14,21.41,83.86,21.3,11.14-.15,19.64-2.51,28.54-6.71,89.17-38.47,107.05-132.49,82.33-219.1-4.11-14.39-9.45-28.38-15.91-41.94-3.65-7.89-9.04-16.05-15.1-23.82-38.3-47.46-93.91-83.04-152.78-99.48-68.38-18.87-139.93-2.71-198.63,34.65-62.31,40.05-121.14,117.13-143.39,188.12-9.39,29.97-17.43,90.51,32.39,77.64,65.44-18.11,107.66-102.54,132.7-160.78,32.97-76.88,54.66-158.61,65.59-241.73,16.08-109.13,9.49-223.79,3.43-333.83,10.77,28.3,34.04,90.57,44.44,117.98,27.48,71.86,52.68,146.6,81.09,218.13,17.33,42.84,36.71,84.64,56.78,125.96,18.9,37.76,37.73,78.05,66.53,108.46,44.91,48.15,104.99,17,151.77-11.82-10.67,11.6-22.12,22.31-34.64,31.97-12.6,9.67-26.12,18.74-41.63,25.65-35.7,16.25-73.34,12.64-104.86-10.73-73.71-56.33-94.99-176.34-119.28-260.87-25.5-88.88-54.27-177.4-95.29-260.42,0,0,24.03-6.43,24.03-6.43,6.85,42.88,10.62,86.31,11.67,129.89,2.9,176.34-35.87,395.48-177.47,514.67-28.21,23.36-85.66,55.23-114.51,17.34-30.76-43.28.53-139.43,21.77-183.56,53.83-113.68,150.55-183.89,279.66-162.34,87.67,15.42,173.19,55.69,236.92,118.47,16.16,15.94,29.24,37.46,39.06,58.49,49.2,101.41,35.3,229.86-72.41,286.3-17.02,8.63-35.75,16.7-55.01,18.03-43.14,2.8-82.99-16.79-118.15-38.89-55.11-35.93-103.15-81.39-148.62-128.5-16.73-17.83-33.25-35.99-47.55-55.89-10.57-14.89-24.28-27.12-38.51-38.53-99.33-77.46-237.89-104.25-356.88-62.73-14.08,5.11-28.45,10.24-42.64,15.05-21.78,6.62-42.32,16.74-60.54,30.06-18.46,13.81-36.35,33.46-37.04,57.26.2,25.18,23.38,32.62,45.11,25.95,19.02-5.4,35.49-18.5,49.68-32.29,30.48-29.5,58.04-61.97,87.97-92.01,80.83-83.33,154.37-174.72,213.82-274.45C507.76,325.07,552.02,173.1,492.99,0h0Z"/>
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
       <div className={`side-menu ${isOpen ? '' : 'inactive'}`}>
-        <a href="/" className="home-nav-link">About</a>
-        <a href="/Projects" className="home-nav-link">Projects</a>
-        <a href="/Art" className="home-nav-link">Art Portfolio</a>
-        <a href="/Resume" className="home-nav-link">Resume</a>
+        <Link to="/" className="home-nav-link" onClick={closeMenu}>About</Link>
+        <Link to="/Projects" className="home-nav-link" onClick={closeMenu}>Projects</Link>
+        <Link to="/Art" className="home-nav-link" onClick={closeMenu}>Art Portfolio</Link>
+        <Link to="/Resume" className="home-nav-link" onClick={closeMenu}>Resume</Link>
       </div>
     </nav>
   );

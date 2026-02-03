@@ -1,8 +1,15 @@
 @import './defaults.css';
 
+
+.monogram {
+	fill: var(--accent1);
+}
+.monogram:hover {
+  fill: var(--accent2);
+}
 .home-nav {
   z-index: 1001;
-  background-color: var(--neutral1);
+  background-color: var(--background2);
   position: sticky;
   width: 100vw;
   top: 0;
@@ -18,7 +25,7 @@
 }
 
 nav button {
-  color: var(--primary1);
+  color: var(--accent1);
   background-color: transparent;
   border: none;
   margin: 10px;
@@ -36,29 +43,28 @@ nav button:hover {
 .right-nav {
   display: flex;
   align-items: center;
-  text-align: right;
   max-width: 90%;
 }
 
 .home-nav-link {
-  border-bottom: 2px solid var(--primary1);
-  color: var(--text1);
+  border-bottom: 2px solid var(--accent1);
+  color: var(--text3);
   text-decoration: none;
   padding: 30px;
   transition: 0.3s ease;
 }
 
 .home-nav-link:hover {
-  color: var(--text3);
-  border-bottom: 2px solid var(--primary2);
-  background-color: var(--primary3);
+  color: var(--text2);
+  border-bottom: 2px solid var(--accent2);
+  background-color: var(--background3);
 }
 
 /* Side Menu Styles */
 .side-menu {
   height: 100vh;
   max-width: 100vw;
-  background-color: var(--background4);
+  background-color: var(--background3);
   position: fixed;
   left: -100vw;
   top: 0;
@@ -69,6 +75,7 @@ nav button:hover {
   padding: 80px 20px 20px;
   margin: 0;
   box-sizing: border-box;
+  opacity: 0.95;
 }
 
 .side-menu:not(.inactive) {
@@ -78,20 +85,21 @@ nav button:hover {
   display: block;
   padding: 15px 20px;
   margin: 5px 0;
-  border-bottom: 1px solid var(--primary1);
+  border-bottom: 1px solid var(--accent1);
   border-left: 3px solid transparent;
   transition: all 0.3s ease;
 }
 
 .side-menu .home-nav-link:hover {
-  border-left: 3px solid var(--primary2);
-  background-color: var(--primary3);
+  border-left: 4px solid var(--accent2);
   padding-left: 25px;
+  background-color: var(--background2);
+  color: var(--text2);
 }
 
 /* Footer Styles */
 footer {
-  background-color: var(--secondary1);
+  background-color: var(--accent3);
   padding: 20px;
   text-align: center;
 }

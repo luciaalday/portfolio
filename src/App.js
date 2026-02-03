@@ -9,9 +9,12 @@ import './assets/defaults.css';
 import './assets/home.css';
 import './assets/nav.css';
 import './assets/animations.css';
+import './assets/resume.css';
+import './assets/art.css'
 
 import Nav from './universal/Nav';
 import Footer from './universal/Footer';
+import Colors from './universal/Colors';
 
 function App() {
   return (
@@ -23,6 +26,7 @@ function App() {
           <Route path='/Resume' element={<Resume />} />
           <Route path='/Coding' element={<DevProjects />} />
           <Route path='/Art' element={<ArtPortfolio />} />
+          <Route path='/Colors' element={<Colors />} />
         </Routes>
       <Footer />
       </Router>

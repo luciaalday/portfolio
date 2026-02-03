@@ -1,24 +1,49 @@
-import DigitalShip from '../img/art/Alday_ocean ship.jpeg';
+import ScrollSection from '../components/SideScrollSection';
 
-export default function ArtPortfolio () {
+import DigitalShip from '../img/art/Alday_ocean ship.jpeg';
+import AlbumCover from '../img/art/album_cover.png';
+import FrogWaterfall from '../img/art/Alday_frog forest waterfall.jpg';
+import NightDrive from '../img/art/Alday_night_drive.jpg';
+
+export default function ArtPortfolio() {
   return (
-    <div className="art">
-      <p>Art portfolio page</p>
-      <table>
-        <tbody>
-          <tr>Graphic design</tr>
-          <tr>
-            <td>Digital Media</td>
-          </tr>
-          <tr>
-            <td>
-              <img alt="Ship on a calm ocean night" src={DigitalShip} width={200} />
-            </td>
-          </tr>
-          <tr>Black, white, and a splash of color</tr>
-          <tr>Paintings</tr>
-        </tbody>
-      </table>
-    </div>
-  )
+    <main className="portfolio">
+
+      <ScrollSection title="Digital Art">
+        <div className="scroll-item">
+          {/** TODO create toggle for each image to display information on click */}
+          <div className="image-wrap">
+            <img src={DigitalShip} alt="Ocean ship digital artwork" />
+          </div>
+        </div>
+
+        <div className="scroll-item">
+          <div className="image-wrap">
+            <img src={FrogWaterfall} alt="Artwork" />
+          </div>
+        </div>
+
+        <div className="scroll-item">
+          <div className="image-wrap">
+            <img src={NightDrive} alt="Artwork" />
+          </div>
+        </div>
+
+        <div className="scroll-item">
+          <div className="image-wrap">
+            <img src={AlbumCover} alt="Artwork" />
+          </div>
+        </div>
+      </ScrollSection>
+
+      <ScrollSection title="Illustrations">
+        <div className="scroll-item">
+          <div className="image-wrap">
+            <img src={DigitalShip} alt="Artwork" />
+          </div>
+        </div>
+      </ScrollSection>
+
+    </main>
+  );
 }

@@ -1,17 +1,62 @@
 @import './defaults.css';
 
-.art {
-  display: grid;
-}
-.art table {
-  border-collapse: collapse;
-  border: 1px solid red;
-}
-.art td {
-  color: var(--text1);
+.portfolio {
+  overflow: hidden;
 }
 
-.resume {
-  text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+.scroll-container {
+  display: flex;
+  max-width: 90vw;
+  padding: 20px;
+  max-height: 70vh;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  background-color: var(--background4);
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.scroll-item {
+  border-radius: 10px;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  width: auto;
+}
+
+.scroll-item:hover {
+  opacity: 0.85;
+}
+
+.scroll-item img {
+  max-height: 70vh;
+  max-width: 90vw;  /* limit width in case we prioritize viewing the whole thing over aesthetics */
+  object-fit: contain;
+  display: block;
+  width: auto;
+}
+
+/* arrows */
+.scroll-arrow {
+  color: var(--accent1);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.scroll-arrow:hover {
+  color: var(--accent2);
+}
+
+.arrow-row {
+  display: flex;
+  justify-content: space-between;
+  min-width: 40%;
+  max-width: 90%;
+  align-items: center;
+  margin: 8px auto;
 }
