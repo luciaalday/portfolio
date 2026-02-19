@@ -25,9 +25,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path='/Resume' element={<Resume />} />
-          <Route path='/Projects' element={<DevProjects />} />
-          <Route path='/Research' element={<DevProjects />} />
-          <Route path='/Art' element={<ArtPortfolio />} />
+          <Route path='/Developer' element={<DevProjects />} />
+          <Route path='/Researcher' element={<DevProjects />} />
+          <Route path='/Designer' element={<ArtPortfolio />} />
           {/** Reference page for theme colors */}
           <Route path='/Colors' element={<Colors />} />
           <Route path='*' element={<NotFound />} /> 

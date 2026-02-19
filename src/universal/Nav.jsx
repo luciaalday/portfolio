@@ -27,8 +27,9 @@ export default function Nav() {
         </div>
         <div className='right-nav'>
           <Link to="/" className="home-nav-link">About Me</Link>
-          <Link to="/Projects" className="home-nav-link">Projects</Link>
-          <Link to="/Art" className="home-nav-link">Art Portfolio</Link>
+          <Link to="/Developer" className="home-nav-link">Software Projects</Link>
+          <Link to="/Researcher" className="home-nav-link">Research</Link>
+          <Link to="/Designer" className="home-nav-link">Design Portfolio</Link>
           <Link to="/Resume" className="home-nav-link">Resume</Link>
           <Link to="/" aria-label='Home'>
             <svg className='monogram' width={50} viewBox="0 0 1072 1072" style={{padding:'10px 15px 8px'}}>
@@ -39,8 +40,9 @@ export default function Nav() {
       </div>
       <div className={`side-menu ${isOpen ? '' : 'inactive'}`}>
         <Link to="/" className="home-nav-link" onClick={closeMenu}>About</Link>
-        <Link to="/Projects" className="home-nav-link" onClick={closeMenu}>Projects</Link>
-        <Link to="/Art" className="home-nav-link" onClick={closeMenu}>Art Portfolio</Link>
+        <Link to="/Developer" className="home-nav-link" onClick={closeMenu}>Software Projects</Link>
+        <Link to="/Researcher" className="home-nav-link" onClick={closeMenu}>Research & Publications</Link>
+        <Link to="/Designer" className="home-nav-link" onClick={closeMenu}>Design Portfolio</Link>
         <Link to="/Resume" className="home-nav-link" onClick={closeMenu}>Resume</Link>
       </div>
     </nav>

@@ -3,6 +3,8 @@ import { useState, useCallback, useRef, useEffect } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
+import { TbArrowLeftDashed, TbArrowRightDashed } from 'react-icons/tb';
+import { MdKeyboardDoubleArrowLeft, MdKeyboardDoubleArrowRight } from 'react-icons/md';
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.mjs',
@@ -12,6 +14,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 export default function PDFViewer({ file }) {
   const containerRef = useRef(null);
   const [containerWidth, setContainerWidth] = useState(null);
+  const [pageHeight, setPageHeight] = useState(null);
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
   const [error, setError] = useState(null);
@@ -34,33 +37,37 @@ export default function PDFViewer({ file }) {
     setError(err.message);
   }, []);
 
-  const changePage = (delta) => (e) => {
-    e.preventDefault();
-    setPageNumber(p => Math.clamp(p + delta, 1, numPages));
-  };
-
   if (!file) return <p>No file provided.</p>;
   if (error) return <p>Failed to load PDF: {error}</p>;
 
   return (
-    <div ref={containerRef} style={{ width: '100%', overflowAnchor:'none' }}>
+    <div ref={containerRef} style={{ width: '100%', minHeight: pageHeight ?? undefined, overflowAnchor: 'none' }}>
       <Document
         file={file}
         onLoadSuccess={onDocumentLoadSuccess}
         onLoadError={onDocumentLoadError}
         loading={<p>Loading PDF...</p>}
       >
-        <Page pageNumber={pageNumber} width={containerWidth ?? undefined} />
+        <Page
+          pageNumber={pageNumber}
+          width={containerWidth ?? undefined}
+          onRenderSuccess={({ height }) => setPageHeight(height)}
+        />
       </Document>
-
       {numPages && (
         <div>
-          <button onClick={() => setPageNumber(p => Math.max(p - 1, 1))} disabled={pageNumber <= 1}>
-            Previous
+          <button className="scroll-arrow" onClick={() => setPageNumber(1)} disabled={pageNumber <= 1}>
+            <MdKeyboardDoubleArrowLeft size={35} />
+          </button>
+          <button className="scroll-arrow" onClick={() => setPageNumber(p => Math.max(p - 1, 1))} disabled={pageNumber <= 1}>
+            <TbArrowLeftDashed size={35} />
           </button>
           <span>Page {pageNumber} of {numPages}</span>
-          <button onClick={() => setPageNumber(p => Math.min(p + 1, numPages))} disabled={pageNumber >= numPages}>
-            Next
+          <button className="scroll-arrow" onClick={() => setPageNumber(p => Math.min(p + 1, numPages))} disabled={pageNumber >= numPages}>
+            <TbArrowRightDashed size={35} />
+          </button>
+          <button className="scroll-arrow" onClick={() => setPageNumber(numPages)} disabled={pageNumber >= numPages}>
+            <MdKeyboardDoubleArrowRight size={35} />
           </button>
         </div>
       )}

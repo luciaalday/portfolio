@@ -8,9 +8,9 @@ export default function Home() {
         </section>
         <section className="right">
           <p>I am...</p>
-          <a href="/Projects"><h2 className="item">A developer</h2></a>
-          <a href="/Research"><h2 className="item">A researcher</h2></a>
-          <a href="/Art"><h2 className="item">An artist</h2></a>
+          <a href="/Developer"><h2 className="item">A developer</h2></a>
+          <a href="/Researcher"><h2 className="item">A researcher</h2></a>
+          <a href="/Designer"><h2 className="item">A designer</h2></a>
           <a href="/Resume"><h5 className="item">View my experience</h5></a>
         </section>
       </article>
