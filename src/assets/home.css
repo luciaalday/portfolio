@@ -78,6 +78,7 @@ a:hover {
 	section {
 		width: 90vw;
 		margin: auto;
+		text-align: center;
 	}
 	article {
 		flex-direction: column;
@@ -94,7 +95,7 @@ a:hover {
 @media (width>768px) {
 	section {
 		width: 45vw;
-		margin: 0;
+		margin: auto;
 		padding: 20px;
 	}
 	article {
