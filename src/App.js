@@ -15,6 +15,7 @@ import './assets/art.css'
 import Nav from './universal/Nav';
 import Footer from './universal/Footer';
 import Colors from './universal/Colors';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -24,9 +25,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path='/Resume' element={<Resume />} />
-          <Route path='/Coding' element={<DevProjects />} />
+          <Route path='/Projects' element={<DevProjects />} />
+          <Route path='/Research' element={<DevProjects />} />
           <Route path='/Art' element={<ArtPortfolio />} />
+          {/** Reference page for theme colors */}
           <Route path='/Colors' element={<Colors />} />
+          <Route path='*' element={<NotFound />} /> 
         </Routes>
       <Footer />
       </Router>

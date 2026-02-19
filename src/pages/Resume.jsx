@@ -1,3 +1,7 @@
+/** src/pages/Resume.jsx 
+ * 
+ * Purpose: Display resume and allow PDF download
+*/
 import { MdDownload } from "react-icons/md";
 
 export default function Resume() {

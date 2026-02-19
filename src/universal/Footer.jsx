@@ -1,3 +1,4 @@
+/** src/universal/Footer.jsx */
 import { FaGithub, FaLinkedin, FaMoon, FaRegMoon } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Cookies from "js-cookie";

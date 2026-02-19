@@ -1,3 +1,19 @@
+/** src/pages/ArtPortfolio.jsx 
+ * 
+ * Purpose: Showcase art and graphic design
+ * Projects:
+ *    1. Graphic Design
+ *        a. T-Shirts
+ *    2. Infographics
+ *        a. One pager
+ *        b. graphical abstract
+ *    3. Digital art
+ *        a. Adobe
+ *        b. Procreate
+ *    4. Physical media
+ *        a. Paintings
+ *        b. Pen/pencil
+*/
 import ScrollSection from '../components/SideScrollSection';
 
 import SolarOvenShirt from '../img/graphic_design/solar oven T-shirt Lucia Alday high resolution.png';

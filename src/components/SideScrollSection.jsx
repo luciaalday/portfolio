@@ -1,3 +1,4 @@
+/** src/components/SideScrollSection.jsx */
 import { useRef } from 'react';
 import { MdKeyboardDoubleArrowLeft, MdKeyboardDoubleArrowRight } from 'react-icons/md';
 import { TbArrowLeftDashed, TbArrowRightDashed } from 'react-icons/tb';

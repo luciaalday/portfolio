@@ -1,3 +1,5 @@
+/** src/universal/Colors.jsx 
+*/
 export default function Colors() {
   return (
     <article>
