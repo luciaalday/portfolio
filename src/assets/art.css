@@ -62,7 +62,38 @@
   margin: 8px auto;
 }
 
-/* START PDF STYLING */
-Document {
-  max-width: 95vw;
+/* CONTAINER TEXT ON HOVER STYLING */
+.img-container {
+  position: relative;
+  /* possible need for height/width constraints, but should be covered by scroll-item 
+   * lowkey might not be necessary at all ideally */
+}
+
+.img-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* hopefully doesn't fuck up and settings from scroll-item 
+   * this might not be necessary at all tbh */
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  color: var(--text1);
+  background-color: var(--background6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.img-container:hover .overlay-text {
+  opacity: 1;
 }

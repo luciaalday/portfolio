@@ -31,7 +31,7 @@ export default function ArtPortfolio() {
     <main className="portfolio">
 
       <ScrollSection title="Graphic Design">
-        <div className="scroll-item">、
+        <div className="scroll-item">
           <img src={SolarOvenShirt} alt="Artwork" />
         </div>
         <div className="scroll-item">
