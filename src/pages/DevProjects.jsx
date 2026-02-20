@@ -16,16 +16,17 @@ export default function DevProjects() {
   return (
     <main>
       <article>
+        <div style={{textAlign:'center', margin:'auto'}}>
           <h1>UrbanIntel</h1>
           <h2>QWER Hacks at UCLA, February 2026</h2>
-          <p>Throughout the process of writing the paper, </p>
+        </div>
       </article>
       <article>
         <section>
           <PDFViewer file={UrbanIntelPPTX} />
         </section>
         <section>
-          <img src={UrbanIntelPNG} alt='Screenshot of UrbanIntel web view'/>
+          <img src={UrbanIntelPNG} alt='Screenshot of UrbanIntel web view' style={{maxHeight:'60vh'}}/>
         </section>
       </article>
     </main>
