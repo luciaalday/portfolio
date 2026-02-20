@@ -7,9 +7,19 @@
  *    3. Marana ARS Code admin page and editor (remove any identifying content)
  *    4. Event planner site or blog post site
  */
+import ScrollSection from '../components/SideScrollSection';
 import UrbanIntelPPTX from '../img/powerpoints/UrbanIntel.pdf';
 import UrbanIntelPNG from '../img/powerpoints/UrbanIntelScreenshot.png';
 import UAHealthConnectPNG from '../img/powerpoints/UAHealthConnect.png';
+import EventUI1 from '../img/powerpoints/events/edit-event.png';
+import EventUI2 from '../img/powerpoints/events/login-light.png';
+import EventUI3 from '../img/powerpoints/events/signup-dark.png';
+import EventUI4 from '../img/powerpoints/events/userdash-dark.png';
+import Legal1 from '../img/powerpoints/legal/change-password.png';
+import Legal2 from '../img/powerpoints/legal/create-new.png';
+import Legal3 from '../img/powerpoints/legal/manage-edits.png';
+import Legal4 from '../img/powerpoints/legal/manage-users.png';
+import Legal5 from '../img/powerpoints/legal/version-history.png';
 
 export default function DevProjects() {
   return (
@@ -57,19 +67,49 @@ export default function DevProjects() {
           <h1>Legal Code Editor</h1>
           <h2>Using Slate.js, React, Firebase Authentication, Realtime Database, and Cloud Functions</h2>
           <p>
-            Creating a dynamic solution for the legal department to modify ARS codes and keep track of version control
+            In my internship at the Town of Marana, I created a apge for the legal team to easily access and edit ARS Code information. The styling was made to be cohesive with other official materials from the town while maintaining a clean, modern look and feel. Users and admin have different permissions when it comes to editing and approving edits, and rather than relying on the IT team to authorize admin users, Cloud Functions were implemented to allow admin users to authorize each other while preserving the security of the accounts. 
           </p>
           <p>
             Check out the Github repository <a href='https://github.com/luciaalday/update-legal-fines'>here</a>
           </p>
         </section>
         <section>
-          {/** insert a pdf compiling the different page views, redacting any data */}
+          {/** TODO redact any identifying data */}
+          <ScrollSection title="Fine editor">
+            <div className="scroll-item">
+              <img src={Legal1} alt='Fine editor screenshot' />
+            </div>
+            <div className="scroll-item">
+              <img src={Legal2} alt='Fine editor screenshot' />
+            </div>
+            <div className="scroll-item">
+              <img src={Legal3} alt='Fine editor screenshot' />
+            </div>
+            <div className="scroll-item">
+              <img src={Legal4} alt='Fine editor screenshot' />
+            </div>
+            <div className="scroll-item">
+              <img src={Legal5} alt='Fine editor screenshot' />
+            </div>
+          </ScrollSection>
         </section>
       </article>
       <article>
         <section>
-          {/** insert a pdf compiling relevant images */}
+          <ScrollSection title="Events-UI">
+            <div className='scroll-item'>
+              <img src={EventUI1} alt='EventsUI Screenshot' />
+            </div>
+            <div className='scroll-item'>
+              <img src={EventUI2} alt='EventsUI Screenshot' />
+            </div>
+            <div className='scroll-item'>
+              <img src={EventUI3} alt='EventsUI Screenshot' />
+            </div>
+            <div className='scroll-item'>
+              <img src={EventUI4} alt='EventsUI Screenshot' />
+            </div>
+          </ScrollSection>
         </section>
         <section>
           <h1>Events Registration Board</h1>
