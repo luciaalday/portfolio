@@ -51,10 +51,11 @@ p {
 }
 a {
 	text-decoration: none;
-	color: var(--text1);
+	color: var(--accent1);
 }
 a:hover {
 	text-decoration: underline;
+	color: var(--text1);
 }
 .App {
 	flex: 1;

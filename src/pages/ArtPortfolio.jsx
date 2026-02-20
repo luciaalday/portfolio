@@ -1,5 +1,5 @@
-/** src/pages/ArtPortfolio.jsx 
- * 
+/** src/pages/ArtPortfolio.jsx
+ *
  * Purpose: Showcase art and graphic design
  * Projects:
  *    1. Graphic Design

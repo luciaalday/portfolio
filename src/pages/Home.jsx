@@ -1,3 +1,4 @@
+/** src/pages/Homes.jsx */
 export default function Home() {
   return (
     <main>

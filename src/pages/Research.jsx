@@ -6,7 +6,6 @@
  * 		2. ITC Paper final result
  * 		3. Hailey and McNaught's comet spectroscopy project
  */
-import PDFViewer from '../components/PDFViewer';
 import AILitReview from '../img/powerpoints/ITC AI_Lit Review.pdf';
 import ITCPaper from '../img/powerpoints/TPEG ITC_ 2025.pdf';
 import Spectroscopy from '../img/powerpoints/HalleyMcNaughtComets.pdf';
@@ -30,12 +29,22 @@ export default function Research() {
 				</p>
 			</section>
 			<section>
-				<PDFViewer file={ITCPaper} />
+				<iframe
+					src={ITCPaper}
+					width='100%'
+					style={{aspectRatio: '1/1.15', border:'none'}}
+					title='PDF'
+				/>
 			</section>
 		</article>
 		<article>
 			<section>
-				<PDFViewer file={AILitReview} />
+				<iframe
+					src={AILitReview}
+					title='PDF'
+					width='100%'
+					style={{aspectRatio:'1/0.65'}}
+				/>
 			</section>
 			<section>
 				<h1>Preliminary Research</h1>
@@ -55,9 +64,17 @@ export default function Research() {
 				<p>
 					For this project, I used publicly available data sets of wavelengths emitted from the comets over time and analyzed the files using Jupyter Notebook with the numpy and matplotlib.pyplot libraries. I concluded that Halley's comet is made up largely of Hydrogren and Silicon and McNaught's comet is highly made of of Hydrogen and Oxygen. Other elements known to be present were identified on the graph although the amount was less distinct than the aforementioned elements.
 				</p>
+				<p>
+					Check out the Github repository <a href='https://github.com/luciaalday/Cosmos-project'>here</a>
+				</p>
 			</section>
 			<section>
-				<PDFViewer file={Spectroscopy} />
+				<iframe
+					src={Spectroscopy}
+					title='PDF'
+					width='100%'
+					style={{aspectRatio:'1/1.15'}}
+				/>
 			</section>
 		</article>
 	</main>
