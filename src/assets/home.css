@@ -6,7 +6,7 @@ html, body {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-	background-image: radial-gradient(circle, var(--background2), var(--background1));
+	background-image: radial-gradient(circle, var(--background1), var(--background1), var(--background2));
 }
 main {
 	max-width: 100vw;

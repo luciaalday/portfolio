@@ -8,27 +8,24 @@
  *    4. SKELETON GUI (maybe)
  *    5. www.uahealthconnectforschools.org
  */
-import AILitReview from '../img/powerpoints/ITC AI_Lit Review.pdf';
 import PDFViewer from '../components/PDFViewer';
+import UrbanIntelPPTX from '../img/powerpoints/UrbanIntel.pdf';
+import UrbanIntelPNG from '../img/powerpoints/UrbanIntelScreenshot.png';
 
 export default function DevProjects() {
   return (
     <main>
       <article>
-        <section>
-          <h1>ITC Preliminary Research</h1>
+          <h1>UrbanIntel</h1>
+          <h2>QWER Hacks at UCLA, February 2026</h2>
           <p>Throughout the process of writing the paper, </p>
-        </section>
-        <section>
-          <PDFViewer file={AILitReview} />
-        </section>
       </article>
       <article>
         <section>
-          <h1>Second presentation</h1>
+          <PDFViewer file={UrbanIntelPPTX} />
         </section>
         <section>
-          <PDFViewer file={AILitReview} />
+          <img src={UrbanIntelPNG} alt='Screenshot of UrbanIntel web view'/>
         </section>
       </article>
     </main>

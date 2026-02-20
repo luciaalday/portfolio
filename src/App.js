@@ -16,6 +16,7 @@ import Nav from './universal/Nav';
 import Footer from './universal/Footer';
 import Colors from './universal/Colors';
 import NotFound from './pages/NotFound';
+import Research from './pages/Research';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path='/Resume' element={<Resume />} />
           <Route path='/Developer' element={<DevProjects />} />
-          <Route path='/Researcher' element={<DevProjects />} />
+          <Route path='/Researcher' element={<Research />} />
           <Route path='/Designer' element={<ArtPortfolio />} />
           {/** Reference page for theme colors */}
           <Route path='/Colors' element={<Colors />} />

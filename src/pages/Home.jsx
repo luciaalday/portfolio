@@ -17,7 +17,6 @@ export default function Home() {
         <hr></hr>
       <article>
         <h2>About Me</h2>
-
       </article>
     </main>
   );
