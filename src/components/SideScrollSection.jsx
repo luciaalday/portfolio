@@ -3,7 +3,7 @@ import { useRef } from 'react';
 import { MdKeyboardDoubleArrowLeft, MdKeyboardDoubleArrowRight } from 'react-icons/md';
 import { TbArrowLeftDashed, TbArrowRightDashed } from 'react-icons/tb';
 
-export default function SideScrollSection({ title, children }) {
+export default function ScrollSection({ title, children }) {
   const scrollRef = useRef(null);
 
   const scrollByAmount = (amount) => {
