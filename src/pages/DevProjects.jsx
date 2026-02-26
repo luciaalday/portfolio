@@ -59,7 +59,8 @@ export default function DevProjects() {
         <section>
           <h1>UA Health Connect for Schools</h1>
           <h2>Implementing the Stock Albuterol for Every (SAFE) School Program</h2>
-          <p></p>
+          <p>During my internship(and now job) at the University of Arizona College of Nursing Asthma & Airway Disease Research Center, I learned what goes on in implementing a research program to 400+ schools in Arizona and created this website to aid in program registration and event reporting.</p>
+          <p>Throughout the process and evolution of the project under a change in grant funding, I created the website to suit the needs of the current project, adjusting the loyout and functionality as needed.</p>
         </section>
       </article>
       <article>
