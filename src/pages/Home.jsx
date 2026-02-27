@@ -22,7 +22,7 @@ export default function Home() {
         <h2>About Me</h2>
       </article>
       <article>
-        <p>I am graduating from the University of Arizona with a B.S. in Computer Science this May of 2026.</p>
+        <p>I'm a computer science student graduating in May of 2026 who enjoys building practical systems that solve concrete problems. My experience spans low level programming in C, backend development with databases, and front end interfaces that prioritize usability. I approach projects analytically, break down ambiguity into structured components, and focus on writing clean, maintainable code. I'm especially drawn to projects where technical depth and user experience intersect.</p>
         <p></p>
       </article>
     </main>
