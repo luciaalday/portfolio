@@ -17,6 +17,7 @@ import Footer from './universal/Footer';
 import Colors from './universal/Colors';
 import NotFound from './pages/NotFound';
 import Research from './pages/Research';
+import Stars from './project/Stars';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path='/Developer' element={<DevProjects />} />
           <Route path='/Researcher' element={<Research />} />
           <Route path='/Designer' element={<ArtPortfolio />} />
+          <Route path='/Stars' element={<Stars />} />
           {/** Reference page for theme colors */}
           <Route path='/Colors' element={<Colors />} />
           <Route path='*' element={<NotFound />} /> 
