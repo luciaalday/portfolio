@@ -1,0 +1,13 @@
+@import './defaults.css';
+
+.star-container {
+    display: flexbox;
+}
+.appear-on-hover {
+    opacity: 0;
+    transition: 1s ease-out;
+}
+.appear-on-hover:hover {
+    transition: 0.2s ease-in;
+    opacity:1;
+}

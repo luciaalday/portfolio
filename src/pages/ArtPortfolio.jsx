@@ -64,12 +64,6 @@ export default function ArtPortfolio() {
         </div>
       </ScrollSection>
 
-      <ScrollSection title="Illustrations">
-        <div className="scroll-item">
-          <img src={DigitalShip} alt="Artwork" />
-        </div>
-      </ScrollSection>
-
     </main>
   );
 }
