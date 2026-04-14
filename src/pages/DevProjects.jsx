@@ -97,6 +97,16 @@ export default function DevProjects() {
           </p>
         </section>
       </article>
+      <article>
+        <section>
+          <h1>Spotify API Webpage</h1>
+          <h2>Using React, Spotify WebAPI, OAuth</h2>
+          <p>
+            <FaGithub />
+            
+          </p>
+        </section>
+      </article>
     </main>
   )
 }
